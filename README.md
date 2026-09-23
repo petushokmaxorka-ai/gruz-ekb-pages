@@ -10,6 +10,8 @@
 start .\index.html
 ```
 
+macOS: `open index.html`, Linux: `xdg-open index.html`.
+
 ## Деплой на GitHub Pages
 
 1. Создайте репозиторий на GitHub и запушьте сюда файлы.
@@ -26,7 +28,14 @@ start .\index.html
   - `185.199.109.153`
   - `185.199.110.153`
   - `185.199.111.153`
-- `CNAME` для `www` → `<ваш-логин>.github.io`
+- `CNAME` для `www` → `petushokmaxorka-ai.github.io`
 
 Далее в **Settings → Pages** укажите Custom domain `gruz-ekb.ru` и включите HTTPS.
+
+Домен должен быть зарегистрирован и делегирован: пока в репозитории лежит
+`CNAME`, GitHub перенаправляет `petushokmaxorka-ai.github.io/gruz-ekb-pages/`
+на `gruz-ekb.ru`, и если домен не резолвится, сайт недоступен. Чтобы
+временно публиковать сайт по адресу
+`https://petushokmaxorka-ai.github.io/gruz-ekb-pages/`, удалите `CNAME`
+(или очистите Custom domain в **Settings → Pages**).
 
